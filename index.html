@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="script.js"></script>
+
+    </head>
+    <body ng-app="myApp" ng-controller="mainCtrl">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Hello World SPA</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main">
+            <div ng-view></div>
+        </div>
+
+        <footer class="text-center">
+            <p>View my Github on <a href="https://github.com/AnnaLiao2013">Ann Liao</a></p>
+        </footer>
+    </body>
+</html>
